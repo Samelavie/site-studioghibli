@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Ghibli</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linkando o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Filmes do Estúdio Ghibli</h1>
+    </header>
+
+    <section class="filmes">
+        <div class="filme">
+            <img src="filme1.jpg" alt="Filme 1">
+            <h2>Meu Amigo Totoro</h2>
+            <p>Duas meninas se mudam com o pai para o interior do Japão, com o objetivo de ficar perto da mãe, que está internada em um hospital. Lá, elas viverão muitas aventuras ao lado de um simpático espírito protetor da floresta chamado Totoro, que vive em uma canforeira gigante.</p>
+        </div>
+        <div class="filme">
+            <img src="filme2.jpg" alt="Filme 2">
+            <h2>A Viagem de Chihiro</h2>
+            <p>Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.</p>
+        </div>
+        <div class="filme"> 
+            <img src="filme3.jpg" alt="Filme 3">
+            <h2>O Castelo Animado</h2>
+            <p>Uma bruxa lança uma terrível maldição sobre a jovem Sophie transformando-a em uma velha. Desesperada, ela embarca em uma odisseia em busca do mago Howl, um misterioso feiticeiro que pode ajudá-la a reverter o feitiço.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Estúdio Ghibli</p>
+    </footer>
+    
+    <script>
+        const filmes = document.querySelectorAll('.filme');
+    
+        filmes.forEach(filme => {
+            filme.addEventListener('mouseover', () => {
+                filme.querySelector('h2').style.color = 'green';
+            });
+            filme.addEventListener('mouseout', () => {
+                filme.querySelector('h2').style.color = '';
+            });
+        });
+    </script>
+      
+</body>
+</html>
